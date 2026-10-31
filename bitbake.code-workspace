@@ -1,0 +1,63 @@
+{
+    "folders": [
+        {
+            "name": "conf",
+            "path": "build/conf"
+        },
+        {
+            "name": "meta-frame",
+            "path": "layers/meta-frame"
+        },
+        {
+            "name": "meta-raspberrypi",
+            "path": "layers/meta-raspberrypi"
+        },
+        {
+            "name": "meta-openembedded",
+            "path": "layers/meta-openembedded"
+        },
+        {
+            "name": "meta-yocto",
+            "path": "layers/meta-yocto"
+        },
+        {
+            "name": "bitbake",
+            "path": "layers/bitbake"
+        },
+        {
+            "name": "openembedded-core",
+            "path": "layers/openembedded-core"
+        }
+    ],
+    "settings": {
+        "bitbake.disableConfigModification": true,
+        "bitbake.pathToBitbakeFolder": "layers/bitbake",
+        "bitbake.pathToBuildFolder": "build",
+        "bitbake.pathToEnvScript": "build/init-build-env",
+        "bitbake.workingDirectory": "build",
+        "files.associations": {
+            "*.conf": "bitbake",
+            "*.inc": "bitbake"
+        },
+        "files.exclude": {
+            "**/.git/**": true
+        },
+        "search.exclude": {
+            "**/.git/**": true,
+            "**/logs/**": true
+        },
+        "files.watcherExclude": {
+            "**/.git/**": true,
+            "**/logs/**": true
+        },
+        "python.analysis.exclude": [
+            "**/.git/**",
+            "**/logs/**"
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "yocto-project.yocto-bitbake"
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "version": "1.0",
+    "description": "Pinned source revisions for reproducible Frame OS builds",
+    "sources": {
+        "bitbake": {
+            "git-remote": {
+                "branch": "2.18",
+                "rev": "6e260eb6ab1631607ea414d9ff8ede1155faa5d9",
+                "uri": "https://git.openembedded.org/bitbake"
+            }
+        },
+        "openembedded-core": {
+            "git-remote": {
+                "branch": "wrynose",
+                "rev": "884a91e689d545238cfabd7926c93663950ca286",
+                "uri": "https://git.openembedded.org/openembedded-core"
+            }
+        },
+        "meta-yocto": {
+            "git-remote": {
+                "branch": "wrynose",
+                "rev": "7c25b11156553145fa6b241a2d4f65d94438f804",
+                "uri": "https://git.yoctoproject.org/meta-yocto"
+            }
+        },
+        "yocto-docs": {
+            "git-remote": {
+                "branch": "wrynose",
+                "rev": "197ed05f4f157432e7fcab63ced8df1249217366",
+                "uri": "https://git.yoctoproject.org/yocto-docs"
+            }
+        },
+        "meta-openembedded": {
+            "git-remote": {
+                "branch": "wrynose",
+                "rev": "f28a144aa0a0ae05ca2ee91e1aef6aa05f6a12db",
+                "uri": "https://git.openembedded.org/meta-openembedded"
+            }
+        },
+        "meta-raspberrypi": {
+            "git-remote": {
+                "branch": "wrynose",
+                "rev": "919588393f41b48cb6c5d832aa35e58a19b6762d",
+                "uri": "https://git.yoctoproject.org/meta-raspberrypi"
+            }
+        },
+        "meta-frame": {
+            "git-remote": {
+                "branch": "main",
+                "rev": "5b47390a38b1f24e9fb7a75fe1a8a29b46e326c9",
+                "uri": "https://github.com/josephabbey/meta-frame.git"
+            }
+        }
+    }
+}
