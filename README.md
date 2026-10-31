@@ -7,8 +7,19 @@ BitBake Setup project configuration for **Frame OS** — a Yocto Project-based o
 The Frame OS stack consists of three complementary repositories:
 
 1. **[frame](https://github.com/josephabbey/frame)**: The Python application and PIL rendering toolkit for Inky Impression displays.
-2. **[meta-frame](https://github.com/josephabbey/meta-frame)**: The Yocto / OpenEmbedded layer containing machine configurations, kernel overlays, Python library recipes, and system image targets.
+2. **[meta-frame](https://github.com/josephabbey/meta-frame)**: The Yocto / OpenEmbedded layer containing machine configurations, kernel overlays, Python library recipes, build configuration templates, and system image targets.
 3. **[frame-os](https://github.com/josephabbey/frame-os)** *(this repository)*: The `bitbake-setup` configuration template defining all required upstream layers, branches, and reproducible revisions.
+
+## Build Configuration & `local.conf` Recreation
+
+Frame OS utilizes the OpenEmbedded template mechanism (`oe-template: frame-default`) provided by `meta-frame/conf/templates/default/`. When `bitbake-setup init` is executed, it automatically generates a complete and functional `build/conf/local.conf` and `build/conf/bblayers.conf` with:
+
+- `MACHINE ??= "raspberrypi0-2w-64-frame-dev"` (configurable to `raspberrypi0-2w-64-frame`)
+- `DISTRO ??= "poky"`
+- `LICENSE_FLAGS_ACCEPTED:append = " synaptics-killswitch"`
+- `BB_NUMBER_THREADS ?= "10"`
+- `PARALLEL_MAKE ?= "-j10"`
+- All required metadata layer paths resolved accurately without manual editing.
 
 ## Quick Start with `bitbake-setup`
 

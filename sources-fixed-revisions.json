@@ -35,19 +35,21 @@
                 "branch": "wrynose",
                 "rev": "f28a144aa0a0ae05ca2ee91e1aef6aa05f6a12db",
                 "uri": "https://git.openembedded.org/meta-openembedded"
-            }
+            },
+            "path": "openembedded-core/meta-openembedded"
         },
         "meta-raspberrypi": {
             "git-remote": {
                 "branch": "wrynose",
                 "rev": "919588393f41b48cb6c5d832aa35e58a19b6762d",
                 "uri": "https://git.yoctoproject.org/meta-raspberrypi"
-            }
+            },
+            "path": "openembedded-core/meta-raspberrypi"
         },
         "meta-frame": {
             "git-remote": {
                 "branch": "main",
-                "rev": "5b47390a38b1f24e9fb7a75fe1a8a29b46e326c9",
+                "rev": "beaaa56ca7120c01c22c327552062593f8a847a7",
                 "uri": "https://github.com/josephabbey/meta-frame.git"
             }
         }
