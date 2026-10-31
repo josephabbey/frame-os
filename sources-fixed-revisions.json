@@ -49,7 +49,7 @@
         "meta-frame": {
             "git-remote": {
                 "branch": "main",
-                "rev": "beaaa56ca7120c01c22c327552062593f8a847a7",
+                "rev": "480d0e787a6f20364a0f506be554081af89a496d",
                 "uri": "https://github.com/josephabbey/meta-frame.git"
             }
         }
